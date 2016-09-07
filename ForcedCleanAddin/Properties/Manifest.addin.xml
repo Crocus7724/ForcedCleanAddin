@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel >
+	<Runtime>
+	</Runtime>
+	<Extension path="/MonoDevelop/Ide/Commands/Project" >
+		<Command id="ForcedCleanAddin.ForcedCleanAddinCommands.ForcedClean"
+				 _label="Forced Clean"
+				 defaultHandler="ForcedCleanAddin.ForcedCleanHandler" />
+		<Command id="ForcedCleanAddin.ForcedCleanAddinCommands.ForcedCleanAll"
+				 _label="Forced Clean All"
+				 defaultHandler="ForcedCleanAddin.ForcedCleanAllHandler" />
+	</Extension>
+	<Extension path="/MonoDevelop/Ide/MainMenu/Build" >
+		<SeparatorItem id="ForceCleanSeparator" />
+		<CommandItem id="ForcedCleanAddin.ForcedCleanAddinCommands.ForcedClean" />
+		<CommandItem id="ForcedCleanAddin.ForcedCleanAddinCommands.ForcedCleanAll" />
+	</Extension>
+</ExtensionModel>
