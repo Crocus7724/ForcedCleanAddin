@@ -32,7 +32,7 @@ namespace ForcedCleanAddin
 			}
 
 			monitor?.Log.WriteLine("完了");
-			monitor.Log.WriteLine("");
+			monitor?.Log.WriteLine("");
 		}
 	}
 }
