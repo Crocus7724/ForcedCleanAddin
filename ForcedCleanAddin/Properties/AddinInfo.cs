@@ -5,7 +5,7 @@ using Mono.Addins.Description;
 [assembly: Addin(
 	"ForcedCleanAddin",
 	Namespace = "ForcedCleanAddin",
-	Version = "1.0"
+	Version = "0.0.2"
 )]
 
 [assembly: AddinName("ForcedCleanAddin")]

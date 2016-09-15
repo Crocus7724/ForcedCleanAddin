@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using MonoDevelop.Core;
 using MonoDevelop.Core.Execution;
+using MonoDevelop.Ide;
 using MonoDevelop.Projects;
 
 namespace ForcedCleanAddin
@@ -11,7 +12,8 @@ namespace ForcedCleanAddin
 		{
 			monitor?.Log.WriteLine($"{project.Name}をクリーン...");
 
-			project.Clean(ProgressMonitorService.CleanProgressMonitor, project.DefaultConfiguration.Selector);
+			project.Clean(ProgressMonitorService.CleanProgressMonitor,
+				project.DefaultConfiguration.Selector);
 
 			var path = project.BaseDirectory.FullPath;
 
