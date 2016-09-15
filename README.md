@@ -1,6 +1,6 @@
 # ForcedCleanAddin
 
-Xamarin Studioのbin/objをフォルダごと削除する拡張機能です。
+Xamarin Studioでbin/objをフォルダごと削除する拡張機能です。
 
 ## How to install
 https://github.com/Crocus7724/ForcedCleanAddin/releases から最新版のForcedCleanAddin.dllをダウンロードしてください。  
