@@ -23,7 +23,7 @@ https://github.com/Crocus7724/ForcedCleanAddin/releases から最新版のForced
 
 * `Forced Clean`を選択すると現在テキストエディタで開いているプロジェクトを対象にbin/objフォルダを消去します。
 
-* `Forced Clean All`を選択すると現在Xamarin Studioで開いている全プロジェクトを対象にbin/objフォルダを消去します。
+* `Forced Clean All`を選択すると現在選択されているソリューションを対象にbin/objフォルダを消去します。
 
 ## LICENSE
 MIT License.
