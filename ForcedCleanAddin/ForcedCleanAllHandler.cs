@@ -7,11 +7,15 @@ namespace ForcedCleanAddin
 	public class ForcedCleanAllHandler : CommandHandler
 	{
 		protected override void Update(CommandInfo info)
-			=> info.Visible = IdeApp.Workspace.IsOpen;
-
-		protected override void Run()
 		{
-			var projects = IdeApp.Workspace.GetAllProjects();
+		    info.Enabled = IdeApp.ProjectOperations.CurrentSelectedSolution != null
+		        &&IdeApp.ProjectOperations.CurrentSelectedBuildTarget.CanBuild(
+		                   IdeApp.Workspace.ActiveConfiguration);
+		}
+
+	    protected override void Run()
+		{
+			var projects = IdeApp.ProjectOperations.CurrentSelectedSolution.GetAllProjects();
 
 			var monitor = ProgressMonitorService.OutputProgressMonitor;
 
