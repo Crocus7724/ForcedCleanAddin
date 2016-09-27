@@ -13,8 +13,8 @@ https://github.com/Crocus7724/ForcedCleanAddin/releases から最新版のForced
 
 そしてソリューションをXamarin Studioで開いたとき  
  
- * Force Clean
- * Force Clean All
+ * Forced Clean (プロジェクト名)
+ * Forced Clean All
  
 が表示されれば成功です。
  
