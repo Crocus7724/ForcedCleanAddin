@@ -6,6 +6,11 @@ namespace ForcedCleanAddin
 {
     public class ForcedCleanAllHandler : CommandHandler
     {
+        public ForcedCleanAllHandler()
+        {
+            AutoForcedCleaner.Current.Subscribe();
+        }
+
         protected override void Update(CommandInfo info)
         {
             info.Enabled = IdeApp.ProjectOperations.CurrentSelectedSolution != null

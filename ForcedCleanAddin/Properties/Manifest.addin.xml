@@ -2,6 +2,10 @@
 <ExtensionModel>
     <Runtime>
     </Runtime>
+	<Extension path="/MonoDevelop/Ide/GlobalOptionsDialog/Other">
+         <Section id="ForcedCleanSetting" _label="ForcedClean Setting"
+                 class="ForcedCleanAddin.ForcedCleanSettingPanel" icon="md-prefs-source"/>
+	</Extension>
     <Extension path="/MonoDevelop/Ide/Commands/Project">
         <Command id="ForcedCleanAddin.ForcedCleanAddinCommands.ForcedClean"
                  _label="Forced Clean"
