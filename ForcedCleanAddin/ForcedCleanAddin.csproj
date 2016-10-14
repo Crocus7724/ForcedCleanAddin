@@ -29,6 +29,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AutoForcedCleaner.cs" />
+    <Compile Include="FakeTextEditorExtension.cs" />
     <Compile Include="ForcedCleanAllHandler.cs" />
     <Compile Include="ForcedCleanConst.cs" />
     <Compile Include="ForcedCleanHandler.cs" />

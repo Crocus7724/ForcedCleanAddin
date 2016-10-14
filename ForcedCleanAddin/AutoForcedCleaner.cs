@@ -7,7 +7,7 @@ namespace ForcedCleanAddin
 {
     public class AutoForcedCleaner:IDisposable
     {
-        private bool subscribed;
+        private bool subscribed=false;
         public static AutoForcedCleaner Current { get; }=new AutoForcedCleaner();
 
         public AutoForcedCleaner()

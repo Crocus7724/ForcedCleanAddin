@@ -15,12 +15,20 @@ namespace ForcedCleanAddin
 
             _widget.AutoCleanCheckButton.Active = PropertyService.Get<bool>(ForcedCleanConst.AutoFlagKey);
 
+            _widget.Show();
+
             return _widget;
         }
 
         public override void ApplyChanges()
         {
             PropertyService.Set(ForcedCleanConst.AutoFlagKey, _widget.AutoCleanCheckButton.Active);
+        }
+
+
+        public override void Dispose()
+        {
+            _widget?.Dispose();
         }
     }
 }

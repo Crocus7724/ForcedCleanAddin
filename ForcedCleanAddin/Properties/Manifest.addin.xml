@@ -19,4 +19,7 @@
         <CommandItem id="ForcedCleanAddin.ForcedCleanAddinCommands.ForcedClean"/>
         <CommandItem id="ForcedCleanAddin.ForcedCleanAddinCommands.ForcedCleanAll"/>
     </Extension>
+	<Extension path="/MonoDevelop/Ide/TextEditorExtensions">
+        <Class class="ForcedCleanAddin.FakeTextEditorExtension" />
+	</Extension>
 </ExtensionModel>
